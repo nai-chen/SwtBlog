@@ -44,7 +44,7 @@ public class GridLayoutDemo extends BaseDemo {
 
 		Button button1 = new Button(shell, SWT.NONE);
 		button1.setText("button1");
-		// 占据两行
+		// 鍗犳嵁涓よ
 		GridData gdButton1 = new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 2);
 		button1.setLayoutData(gdButton1);
 
@@ -55,7 +55,7 @@ public class GridLayoutDemo extends BaseDemo {
 
 		Button button3 = new Button(shell, SWT.NONE);
 		button3.setText("button3");
-		// 占据两列
+		// 鍗犳嵁涓よ
 		GridData gdButton3 = new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1);
 		button3.setLayoutData(gdButton3);
 	}
