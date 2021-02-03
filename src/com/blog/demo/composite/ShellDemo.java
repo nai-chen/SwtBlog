@@ -27,9 +27,9 @@ public class ShellDemo extends BaseDemo {
 		trimButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ´°¿ÚÄ¬ÈÏÏÔÊ¾
+		        // çª—å£é»˜è®¤æ˜¾ç¤º
 		        Shell s = new Shell(shell, SWT.SHELL_TRIM);
-		        // ¼àÌı´°¿Ú¶¯×÷
+		        // ç›‘å¬çª—å£åŠ¨ä½œ
 		        s.addShellListener(new ShellListener() {					
 		            @Override
 		            public void shellIconified(ShellEvent e) {
@@ -68,7 +68,7 @@ public class ShellDemo extends BaseDemo {
 		closeButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // Ö»ÏÔÊ¾¹Ø±Õ°´Å¥
+		        // åªæ˜¾ç¤ºå…³é—­æŒ‰é’®
 		        Shell s = new Shell(shell, SWT.CLOSE | SWT.PRIMARY_MODAL);
 		        s.setText("CLOSE Demo");
 		        s.setSize(200, 150);
@@ -82,7 +82,7 @@ public class ShellDemo extends BaseDemo {
 		minButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ÏÔÊ¾×îĞ¡¸ö¹Ø±Õ°´Å¥
+		        // æ˜¾ç¤ºæœ€å°å…³é—­æŒ‰é’®
 		        Shell s = new Shell(shell, SWT.MIN);
 		        s.setText("MIN Demo");
 		        s.setSize(200, 150);
@@ -96,7 +96,7 @@ public class ShellDemo extends BaseDemo {
 		dialogButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ¶Ô»°¿ò°´Å¥
+		        // å¯¹è¯æ¡†æŒ‰é’®
 		        Shell s = new Shell(shell, SWT.DIALOG_TRIM);
 		        s.setText("Dialog Demo");
 		        s.setSize(200, 150);

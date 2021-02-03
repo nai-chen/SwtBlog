@@ -29,7 +29,7 @@ public class FontDialogDemo extends BaseDemo {
 		fontButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // 字体对话框，返回FontData
+		        // 瀛椾綋瀵硅瘽妗嗭紝杩斿洖FontData
 		        FontDialog dialog = new FontDialog(shell);
 		        FontData fd = dialog.open();
 		        if (fd != null) {

@@ -22,22 +22,22 @@ public class LabelDemo extends BaseDemo {
 		image = new Image(display, LabelDemo.class
 		        .getResourceAsStream("demo.gif"));
 
-		// Í¼Æ¬
+		// å›¾ç‰‡
 		Label label = new Label(shell, SWT.BORDER);
 		label.setImage(image);
 		label.setBounds(10, 10, 30, 30);
 
-		// ÎÄ±¾
+		// æ–‡æœ¬
 		Label textLabel = new Label(shell, SWT.NONE);
 		textLabel.setText("label");
 		textLabel.setBounds(50, 10, 60, 30);
 
-		// Ë®Æ½·Ö¸îÏß
+		// æ°´å¹³åˆ†å‰²çº¿
 		Label horizontalLabel = new Label(shell, 
 		        SWT.HORIZONTAL | SWT.SEPARATOR | SWT.BORDER);
 		horizontalLabel.setBounds(10, 50, 120, 20);
 
-		// ´¹Ö±·Ö¸îÏß
+		// åž‚ç›´åˆ†å‰²çº¿
 		Label verticalLabel = new Label(shell,
 		        SWT.VERTICAL | SWT.SEPARATOR);
 		verticalLabel.setBounds(150, 10, 20, 70);

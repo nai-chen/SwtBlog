@@ -25,7 +25,7 @@ public class ToolBarDemo extends BaseDemo {
 	protected void createPartition(Shell shell) {
 		image = new Image(display, ToolBarDemo.class.getResourceAsStream("demo.gif"));
 
-		// ÀÆ∆Ωπ§æﬂ¿∏
+		// Ê∞¥Âπ≥Â∑•ÂÖ∑Ê†è
 		ToolBar horizontalToolBar = new ToolBar(shell, SWT.HORIZONTAL | SWT.WRAP);
 		horizontalToolBar.setBounds(0, 0, 200, 90);
 
@@ -40,13 +40,13 @@ public class ToolBarDemo extends BaseDemo {
 		    }
 		});
 
-		// ∂‡—°π§æﬂ¿∏
+		// Â§öÈÄâÂ∑•ÂÖ∑Ê†è
 		ToolItem toolItem2 = new ToolItem(horizontalToolBar, SWT.CHECK);
 		toolItem2.setText("item 2");
 		toolItem2.setImage(image);
 		toolItem2.setToolTipText("item 2 tips");
 
-		// µ•—°π§æﬂ¿∏
+		// ÂçïÈÄâÂ∑•ÂÖ∑Ê†è
 		ToolItem toolItem3 = new ToolItem(horizontalToolBar, SWT.RADIO);
 		toolItem3.setText("item 3");
 		toolItem3.setImage(image);
@@ -57,14 +57,14 @@ public class ToolBarDemo extends BaseDemo {
 		toolItem4.setImage(image);
 		toolItem4.setToolTipText("item 4 tips");
 
-		// ÃÌº”Œƒ±æøÿº˛
+		// Ê∑ªÂä†ÊñáÊú¨Êéß‰ª∂
 		ToolItem toolItem5 = new ToolItem(horizontalToolBar, SWT.SEPARATOR);
 		Text text = new Text(horizontalToolBar, SWT.BORDER);
 		text.setSize(120, 20);
 		toolItem5.setControl(text);
 		toolItem5.setWidth(120);
 
-		// ¥π÷±π§æﬂ¿∏
+		// ÂûÇÁõ¥Â∑•ÂÖ∑Ê†è
 		ToolBar verticalToolBar = new ToolBar(shell, SWT.VERTICAL | SWT.RIGHT);
 		verticalToolBar.setBounds(0, 100, 80, 80);
 

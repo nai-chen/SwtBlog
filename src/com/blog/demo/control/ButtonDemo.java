@@ -22,25 +22,25 @@ public class ButtonDemo extends BaseDemo {
 		image = new Image(display, ButtonDemo.class
 		        .getResourceAsStream("demo.gif"));
 
-		// ÆÕÍ¨°´Å¥
+		// æ™®é€šæŒ‰é’®
 		Button button = new Button(shell, SWT.RIGHT_TO_LEFT);
 		button.setImage(image);
 		button.setText("Push Button");
 		button.setBounds(20, 10, 150, 25);
 
-		// ¸´Ñ¡°´Å¥
+		// å¤é€‰æŒ‰é’®
 		Button checkButton = new Button(shell, SWT.CHECK);
 		checkButton.setImage(image);
 		checkButton.setText("Check Button");
 		checkButton.setBounds(20, 45, 150, 20);
 
-		// µ¥Ñ¡°´Å¥
+		// å•é€‰æŒ‰é’®
 		Button radioButton = new Button(shell, SWT.RADIO);
 		radioButton.setImage(image);
 		radioButton.setText("Radio Button");
 		radioButton.setBounds(20, 70, 150, 20);
 
-		// ÇĞ»»°´Å¥
+		// åˆ‡æ¢æŒ‰é’®
 		Button toggleButton = new Button(shell, SWT.TOGGLE);
 		toggleButton.setImage(image);
 		toggleButton.setText("Toggle Button");

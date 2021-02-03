@@ -24,18 +24,18 @@ public class MenuDemo extends BaseDemo {
 	protected void createPartition(Shell shell) {
 		image = new Image(display, MenuDemo.class.getResourceAsStream("demo.gif"));
 
-		// ²Ëµ¥À¸
+		// èœå•æ 
 		Menu bar = new Menu(shell, SWT.BAR);
 		shell.setMenuBar(bar);
 
-		// File²Ëµ¥Ïî
+		// Fileèœå•é¡¹
 		MenuItem fileMenuItem = new MenuItem(bar, SWT.CASCADE);
 		fileMenuItem.setText("file");
 
 		Menu fileMenu = new Menu(fileMenuItem);
 		fileMenuItem.setMenu(fileMenu);
 
-		// File²Ëµ¥Ïî - New²Ëµ¥Ïî
+		// Fileèœå•é¡¹ - Newèœå•é¡¹
 		MenuItem newMenuItem = new MenuItem(fileMenu, SWT.CASCADE);
 		newMenuItem.setText("New");
 		newMenuItem.setImage(image);
@@ -43,15 +43,15 @@ public class MenuDemo extends BaseDemo {
 		Menu newMenu = new Menu(newMenuItem);
 		newMenuItem.setMenu(newMenu);
 
-		// File²Ëµ¥Ïî - New²Ëµ¥Ïî - Project²Ëµ¥Ïî 
+		// Fileèœå•é¡¹ - Newèœå•é¡¹ - Projectèœå•é¡¹ 
 		MenuItem projectMenuItem = new MenuItem(newMenu, SWT.PUSH);
 		projectMenuItem.setText("Project");
 
-		// File²Ëµ¥Ïî - New²Ëµ¥Ïî - Class²Ëµ¥Ïî
+		// Fileèœå•é¡¹ - Newèœå•é¡¹ - Classèœå•é¡¹
 		MenuItem classMenuItem = new MenuItem(newMenu, SWT.PUSH);
 		classMenuItem.setText("Class");		
 
-		// File²Ëµ¥Ïî - Open²Ëµ¥Ïî
+		// Fileèœå•é¡¹ - Openèœå•é¡¹
 		MenuItem openMenuItem = new MenuItem(fileMenu, SWT.PUSH);
 		openMenuItem.setText("Open");
 		openMenuItem.addSelectionListener(new SelectionAdapter() {		
@@ -63,7 +63,7 @@ public class MenuDemo extends BaseDemo {
 
 		new MenuItem(fileMenu, SWT.SEPARATOR);
 
-		// File²Ëµ¥Ïî - Close²Ëµ¥Ïî
+		// Fileèœå•é¡¹ - Closeèœå•é¡¹
 		MenuItem closeMenuItem = new MenuItem(fileMenu, SWT.PUSH);
 		closeMenuItem.setText("Close");
 		closeMenuItem.addSelectionListener(new SelectionAdapter() {
@@ -73,13 +73,13 @@ public class MenuDemo extends BaseDemo {
 		    }
 		});
 
-		// Edit²Ëµ¥Ïî
+		// Editèœå•é¡¹
 		MenuItem editMenuItem = new MenuItem(bar, SWT.CASCADE);
 		editMenuItem.setText("Edit");
 		Menu editMenu = new Menu(editMenuItem);
 		editMenuItem.setMenu(editMenu);
 
-		// ¶àÑ¡²Ëµ¥Ïî
+		// å¤šé€‰èœå•é¡¹
 		MenuItem checkItem1MenuItem = new MenuItem(editMenu, SWT.CHECK);
 		checkItem1MenuItem.setText("Check Item1");
 		checkItem1MenuItem.setSelection(true);
@@ -89,7 +89,7 @@ public class MenuDemo extends BaseDemo {
 
 		new MenuItem(editMenu, SWT.SEPARATOR);
 
-		// µ¥Ñ¡²Ëµ¥Ïî
+		// å•é€‰èœå•é¡¹
 		MenuItem radioItem1MenuItem = new MenuItem(editMenu, SWT.RADIO);
 		radioItem1MenuItem.setText("Radio Item1");
 		radioItem1MenuItem.setSelection(true);

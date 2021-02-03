@@ -24,7 +24,7 @@ public class TreeViewerDemo extends BaseDemo {
 	    treeViewer.setContentProvider(new TreeContentProvider());
 	    treeViewer.setLabelProvider(new TreeLabelProvider());
 
-	    /** 设置树的头部
+	    /* 璁剧疆鏍戠殑澶撮儴
 	      Tree tree = treeViewer.getTree();
 	      TreeColumn col1 = new TreeColumn(tree, SWT.NONE);
 	      col1.setText("Teacher");

@@ -26,7 +26,7 @@ public class InputDialogDemo extends BaseDemo {
 		inputButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        InputDialog dialog = new InputDialog(shell, "ÊäÈë", "3 + 5 = ?", "", null);
+		        InputDialog dialog = new InputDialog(shell, "è¾“å…¥", "3 + 5 = ?", "", null);
 		        int result = dialog.open();
 		        if (result == InputDialog.OK) {
 		            System.out.println(dialog.getValue());

@@ -27,7 +27,7 @@ public class FileDialogDemo extends BaseDemo {
 		openButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // 文件对话框，设置文件目录、文件类型和文件格式
+		        // 鏂囦欢瀵硅瘽妗嗭紝璁剧疆鏂囦欢鐩綍銆佹枃浠剁被鍨嬪拰鏂囦欢鏍煎紡
 		        FileDialog dialog = new FileDialog(shell);
 		        dialog.setFilterPath("C:\\");
 		        dialog.setFilterNames(new String[]{"Java Files", "Class Files", "All Files"});
@@ -43,7 +43,7 @@ public class FileDialogDemo extends BaseDemo {
 		multiButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // 文件对话框，可打开多个文件
+		        // 鏂囦欢瀵硅瘽妗嗭紝鍙墦寮�澶氫釜鏂囦欢
 		        FileDialog dialog = new FileDialog(shell, SWT.MULTI);
 		        String result = dialog.open();
 		        if (result != null) {
@@ -60,7 +60,7 @@ public class FileDialogDemo extends BaseDemo {
 		saveButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // 文件保存对话框，设置文件保存目录
+		        // 鏂囦欢淇濆瓨瀵硅瘽妗嗭紝璁剧疆鏂囦欢淇濆瓨鐩綍
 		        FileDialog dialog = new FileDialog(shell, SWT.SAVE);
 		        dialog.setFilterPath("d:\\");
 		        String result = dialog.open();
@@ -74,7 +74,7 @@ public class FileDialogDemo extends BaseDemo {
 		dirButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // 文件夹对话框
+		        // 鏂囦欢澶瑰璇濇
 		        DirectoryDialog dialog = new DirectoryDialog(shell);
 		        dialog.setFilterPath("d:\\");
 		        String result = dialog.open();

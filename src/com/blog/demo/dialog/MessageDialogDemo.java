@@ -26,7 +26,7 @@ public class MessageDialogDemo extends BaseDemo {
 		confirmButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ´ò¿ªConfirm¶Ô»°¿ò£¬¿ÉÑ¡ÔñOK»òCancel
+		        // æ‰“å¼€Confirmå¯¹è¯æ¡†ï¼Œå¯é€‰æ‹©OKæˆ–Cancel
 		        boolean result = MessageDialog.openConfirm(shell,
 		            "MessageDialog", "Confirm Dialog");
 		        System.out.println(result);
@@ -39,7 +39,7 @@ public class MessageDialogDemo extends BaseDemo {
 		errorButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ´ò¿ªError¶Ô»°¿ò
+		        // æ‰“å¼€Errorå¯¹è¯æ¡†
 		        MessageDialog.openError(shell, "MessageDialog", "Error Dialog");
 		    }
 		});
@@ -50,7 +50,7 @@ public class MessageDialogDemo extends BaseDemo {
 		infoButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ´ò¿ªInformation¶Ô»°¿ò
+		        // æ‰“å¼€Informationå¯¹è¯æ¡†
 		        MessageDialog.openInformation(shell, "MessageDialog", "Info Dialog");
 		    }
 		});
@@ -61,7 +61,7 @@ public class MessageDialogDemo extends BaseDemo {
 		questionButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ´ò¿ªQuestion¶Ô»°¿ò£¬¿ÉÑ¡ÔñYes»òNo
+		        // æ‰“å¼€Questionå¯¹è¯æ¡†ï¼Œå¯é€‰æ‹©Yesæˆ–No
 		        boolean result = MessageDialog.openQuestion(shell,
 		            "MessageDialog", "Qurstion Dialog");
 		        System.out.println(result);
@@ -74,7 +74,7 @@ public class MessageDialogDemo extends BaseDemo {
 		warningButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ´ò¿ªWarning¶Ô»°¿ò
+		        // æ‰“å¼€Warningå¯¹è¯æ¡†
 		        MessageDialog.openWarning(shell, "MessageDialog", "Warning Dialog");
 		    }
 		});

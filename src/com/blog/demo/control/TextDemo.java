@@ -21,48 +21,48 @@ public class TextDemo extends BaseDemo {
 	
 	@Override
 	protected void createPartition(Shell shell) {
-		// ÆÕÍ¨ÎÄ±¾
+		// æ™®é€šæ–‡æœ¬
 		Text normalText = new Text(shell, SWT.BORDER);
 		normalText.setBounds(10, 10, 112, 20);
 		normalText.setText("text");
 
-		// ÃÜÂëÎÄ±¾
+		// å¯†ç æ–‡æœ¬
 		Text passwordText = new Text(shell, SWT.PASSWORD | SWT.BORDER);
 		passwordText.setBounds(10, 40, 112, 20);
 		passwordText.setText("text");
 
-		// Ö»¶ÁÎÄ±¾
+		// åªè¯»æ–‡æœ¬
 		Text readonlyText = new Text(shell, SWT.READ_ONLY | SWT.BORDER);
 		readonlyText.setBounds(10, 70, 112, 20);
 		readonlyText.setText("text");
 
-		// ÎŞ±ß¿òÎÄ±¾
+		// æ— è¾¹æ¡†æ–‡æœ¬
 		Text borderlessText = new Text(shell, SWT.NONE);
 		borderlessText.setText("text");
 		borderlessText.setBounds(10, 100, 112, 20);
 
-		// ÎÄ±¾ÏÔÊ¾¹ö¶¯Ìõ
+		// æ–‡æœ¬æ˜¾ç¤ºæ»šåŠ¨æ¡
 		Text multiLineText = new Text(shell,
 		        SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL);
 		multiLineText.setBounds(10, 130, 112, 60);
 
-		// ¿É»»ĞĞÎÄ±¾
+		// å¯æ¢è¡Œæ–‡æœ¬
 		Text wrapText = new Text(shell, SWT.BORDER |
 		        SWT.V_SCROLL | SWT.H_SCROLL | SWT.WRAP);
 		wrapText.setBounds(10, 200, 112, 50);
 
 		Text eventText = new Text(shell, SWT.BORDER);
 		eventText.setBounds(10, 260, 112, 20);
-		// ¼àÌıÎÄ±¾ĞŞ¸Ä
+		// ç›‘å¬æ–‡æœ¬ä¿®æ”¹
 		eventText.addVerifyListener(new VerifyListener() {
 		    @Override
 		    public void verifyText(VerifyEvent e) {
 		        if (e.text.length() > 0) {
 		            System.out.println(e.text);
 		            char c = e.text.charAt(0);
-		            if (c <= 'f' && c >= 'a') { // [a-f]±ä´óĞ´
+		            if (c <= 'f' && c >= 'a') { // [a-f]å˜å¤§å†™
 		                e.text = e.text.toUpperCase();
-		            } else if (c <= '9' && c >= '0') { // 0-9½ûÖ¹ÊäÈë
+		            } else if (c <= '9' && c >= '0') { // 0-9ç¦æ­¢è¾“å…¥
 		                e.doit = false;
 		            }
 		        }

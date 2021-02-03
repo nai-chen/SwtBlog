@@ -10,12 +10,12 @@ public class HelloSWT {
 
     public static void main(String[] args) {
         Display display = Display.getDefault();
-        Shell shell = new Shell(display); // 创建窗口对象
+        Shell shell = new Shell(display); // 鍒涘缓绐楀彛瀵硅薄
         shell.setText("Hello SWT");
-        shell.setSize(200, 150); // 设置窗口大小
+        shell.setSize(200, 150); // 璁剧疆绐楀彛澶у皬
 
-        shell.open(); // 打开窗口
-        shell.layout(); // 进行布局
+        shell.open(); // 鎵撳紑绐楀彛
+        shell.layout(); // 杩涜甯冨眬
 
         while (!shell.isDisposed()) {
             if (!display.readAndDispatch()) {

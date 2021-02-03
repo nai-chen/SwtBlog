@@ -27,7 +27,7 @@ public class CompositeDemo extends BaseDemo {
 		radioButton2.setText("Radio Button2");
 		radioButton2.setBounds(120, 10, 100, 20);
 
-		// 不具备排他性的Radio
+		// 涓嶅叿澶囨帓浠栨�х殑Radio
 		Composite comp2 = new Composite(shell, SWT.BORDER|SWT.NO_RADIO_GROUP);
 		comp2.setBounds(10, 60, 250, 40);
 		Button radioButton3 = new Button(comp2, SWT.RADIO);

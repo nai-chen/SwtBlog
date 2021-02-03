@@ -24,14 +24,14 @@ public class CursorDemo extends BaseDemo {
 	    group1.setBounds(10, 10, 250, 80);
 	    group1.setText("group1");
 
-	    // ÉèÖÃÊó±êÑùÊ½
+	    // è®¾ç½®é¼ æ ‡æ ·å¼
 	    Group group2 = new Group(shell, SWT.NONE);
 	    group2.setBounds(10, 100, 250, 80);
 	    group2.setText("group2");
 	    cursor1 = new Cursor(display, SWT.CURSOR_CROSS);
 	    group2.setCursor(cursor1);
 
-	    // ×Ô¶¨ÒåÍ¼Æ¬×÷ÎªÊó±êÑùÊ½
+	    // è‡ªå®šä¹‰å›¾ç‰‡ä½œä¸ºé¼ æ ‡æ ·å¼
 	    Group group3 = new Group(shell, SWT.NONE);
 	    group3.setBounds(10, 190, 250, 80);
 	    group3.setText("group3");

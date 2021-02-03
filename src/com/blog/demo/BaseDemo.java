@@ -9,14 +9,14 @@ public abstract class BaseDemo {
     	
 	protected BaseDemo(String title, int width, int height) {
 		display = Display.getDefault();
-	    shell = new Shell(display); // 创建窗口对象
+	    shell = new Shell(display); // 鍒涘缓绐楀彛瀵硅薄
 	    shell.setText(title);
-	    shell.setSize(width, height); // 设置窗口大小		
+	    shell.setSize(width, height); // 璁剧疆绐楀彛澶у皬	
 
 		createPartition(shell);
 		
-		shell.open(); // 打开窗口
-	    shell.layout(); // 进行布局
+		shell.open(); // 鎵撳紑绐楀彛
+	    shell.layout(); // 杩涜甯冨眬
 
 	    while (!shell.isDisposed()) {
 	        if (!display.readAndDispatch()) {

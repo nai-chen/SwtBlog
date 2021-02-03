@@ -25,7 +25,7 @@ public class StyleTextDemo extends BaseDemo {
 		StyledText text = new StyledText(shell, SWT.NONE);
 		text.setText("Hello SWT and JFace!");
 
-		// 设置字体和下划线
+		// 璁剧疆瀛椾綋鍜屼笅鍒掔嚎
 		font = new Font(display, "Courier New", 16, SWT.ITALIC);
 		StyleRange range1 = new StyleRange();
 		range1.start = 0;
@@ -34,7 +34,7 @@ public class StyleTextDemo extends BaseDemo {
 		range1.underline = true;
 		text.setStyleRange(range1);
 
-		// 设置删除线和文字位置
+		// 璁剧疆鍒犻櫎绾垮拰鏂囧瓧浣嶇疆
 		StyleRange range2 = new StyleRange();
 		range2.start = 6;
 		range2.length = 7;
@@ -42,7 +42,7 @@ public class StyleTextDemo extends BaseDemo {
 		range2.rise = 10;
 		text.setStyleRange(range2);
 
-		// 设置字体颜色和背景色
+		// 璁剧疆瀛椾綋棰滆壊鍜岃儗鏅壊
 		redColor = display.getSystemColor(SWT.COLOR_RED);
 		yellowColor = display.getSystemColor(SWT.COLOR_YELLOW);
 		StyleRange range3 = new StyleRange();

@@ -29,7 +29,7 @@ public class FillLayoutDemo extends BaseDemo {
 		compLayout.spacing = 20;
 		comp.setLayout(compLayout);
 
-		// 水平显示三个按钮
+		// 姘村钩鏄剧ず涓変釜鎸夐挳
 		Button btn1 = new Button(comp, SWT.NONE);
 		btn1.setText("Button1");
 

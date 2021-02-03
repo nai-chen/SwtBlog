@@ -26,7 +26,7 @@ public class MessageBoxDemo extends BaseDemo {
 		defaultButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ÆÕÍ¨ÏûÏ¢¶Ô»°¿ò£¬Ä¬ÈÏÏÔÊ¾È·ÈÏ°´Å¥
+		        // æ™®é€šæ¶ˆæ¯å¯¹è¯æ¡†ï¼Œé»˜è®¤æ˜¾ç¤ºç¡®è®¤æŒ‰é’®
 		        MessageBox mb = new MessageBox(shell, SWT.ICON_SEARCH);
 		        mb.setText("MessageBox");
 		        mb.setMessage("MessageBox open, MessageBox open!");
@@ -40,7 +40,7 @@ public class MessageBoxDemo extends BaseDemo {
 		okOrCancelButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        //  ÏÔÊ¾´íÎóÍ¼±ê£¬È·ÈÏºÍÈ¡Ïû°´Å¥
+		        // æ˜¾ç¤ºé”™è¯¯å›¾æ ‡ï¼Œç¡®è®¤å’Œå–æ¶ˆä¸‰ä¸ªæŒ‰é’®
 		        MessageBox mb = new MessageBox(shell,
 		            SWT.ICON_ERROR | SWT.OK | SWT.CANCEL);
 		        mb.setText("Error");
@@ -55,7 +55,7 @@ public class MessageBoxDemo extends BaseDemo {
 		yesOrNoButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ÏÔÊ¾ÌáÊ¾Í¼±ê£¬ÊÇ¡¢·ñºÍÈ¡ÏûÈı¸ö°´Å¥
+		        // æ˜¾ç¤ºæç¤ºå›¾æ ‡ï¼Œæ˜¯ã€å¦å’Œå–æ¶ˆä¸‰ä¸ªæŒ‰é’®
 		        MessageBox mb = new MessageBox(shell,
 		            SWT.ICON_INFORMATION | SWT.YES | SWT.NO | SWT.CANCEL);
 		        mb.setText("Information");
@@ -70,7 +70,7 @@ public class MessageBoxDemo extends BaseDemo {
 		retryButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // ÏÔÊ¾ÎÊÌâÍ¼±ê£¬ÖÕÖ¹¡¢ÖØÊÔºÍºöÂÔ°´Å¥
+		        // æ˜¾ç¤ºé—®é¢˜å›¾æ ‡ï¼Œç»ˆæ­¢ã€é‡è¯•å’Œå¿½ç•¥æŒ‰é’®
 		        MessageBox mb = new MessageBox(shell,
 		            SWT.ICON_QUESTION | SWT.ABORT | SWT.RETRY | SWT.IGNORE);
 		        mb.setText("Question");

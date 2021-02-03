@@ -29,7 +29,7 @@ public class ColorDialogDemo extends BaseDemo {
 		colorButton.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		        // 颜色对话框，返回RGB
+		        // 棰滆壊瀵硅瘽妗嗭紝杩斿洖RGB
 		        ColorDialog dialog = new ColorDialog(shell);
 		        RGB rgb = dialog.open();
 		        if (rgb != null) {

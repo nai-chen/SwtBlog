@@ -27,18 +27,18 @@ public class FormLayoutDemo extends BaseDemo {
 		button1.setText("button1");
 
 		FormData fdButton1 = new FormData();
-		fdButton1.left = new FormAttachment(20); // ¸¸ÈİÆ÷¿í¶ÈµÄ20%
-		fdButton1.top = new FormAttachment(10, 15); // ¸¸ÈİÆ÷¸ß¶ÈµÄ10%£¬²¢ÏòÏÂ15px
-		fdButton1.right = new FormAttachment(1, 2, 0); // ¸¸ÈİÆ÷¿í¶ÈµÄ1/2
-		fdButton1.bottom = new FormAttachment(2, 5, 0); // ¸¸ÈİÆ÷¸ß¶È¶ÈµÄ2/5
+		fdButton1.left = new FormAttachment(20); // çˆ¶å®¹å™¨å®½åº¦çš„20%
+		fdButton1.top = new FormAttachment(10, 15); // çˆ¶å®¹å™¨é«˜åº¦çš„10%ï¼Œå¹¶å‘ä¸‹15px
+		fdButton1.right = new FormAttachment(1, 2, 0); // çˆ¶å®¹å™¨å®½åº¦çš„1/2
+		fdButton1.bottom = new FormAttachment(2, 5, 0); // çˆ¶å®¹å™¨é«˜åº¦çš„2/5
 		button1.setLayoutData(fdButton1);
 
 		Button button2 = new Button(shell, SWT.NONE);
 		button2.setText("button2");
 
 		FormData fdButton2 = new FormData();
-		fdButton2.left = new FormAttachment(button1, 0, SWT.RIGHT); // button1µÄÓÒ±ß
-		fdButton2.top = new FormAttachment(button1, 10, SWT.BOTTOM); // button1µÄÏÂ±ß£¬ÏòÏÂ10px
+		fdButton2.left = new FormAttachment(button1, 0, SWT.RIGHT); // button1çš„å³è¾¹
+		fdButton2.top = new FormAttachment(button1, 10, SWT.BOTTOM); // button1çš„ä¸‹è¾¹ï¼Œå‘ä¸‹10px
 		button2.setLayoutData(fdButton2);
 	}
 

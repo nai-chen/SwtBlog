@@ -27,7 +27,7 @@ public class BackgroundModeDemo extends BaseDemo {
 	protected void createPartition(Shell shell) {
 		color = display.getSystemColor(SWT.COLOR_BLUE);
 
-		// Ö¸¶¨À¶É«±³¾°
+		// æŒ‡å®šè“è‰²èƒŒæ™¯
 		Composite composite = new Composite(shell, SWT.NONE);
 		composite.setBounds(10, 10, 260, 90);
 		composite.setBackground(color);
@@ -51,7 +51,7 @@ public class BackgroundModeDemo extends BaseDemo {
 		radioButton1.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		    	// Ä¬ÈÏÇé¿öÏÂ£¬TextºÍLabel¶¼ÏÔÊ¾¸÷×Ô±³¾°É«
+		    	// é»˜è®¤æƒ…å†µä¸‹ï¼ŒTextå’ŒLabeléƒ½æ˜¾ç¤ºå„è‡ªèƒŒæ™¯è‰²
 		        composite.setBackgroundMode(SWT.INHERIT_NONE);
 		    }
 		});
@@ -62,7 +62,7 @@ public class BackgroundModeDemo extends BaseDemo {
 		radioButton2.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		    	// TextÏÔÊ¾¸÷×Ô±³¾°É«£¬LabelÏÔÊ¾ÈİÆ÷±³¾°É«
+		    	// Textæ˜¾ç¤ºå„è‡ªèƒŒæ™¯è‰²ï¼ŒLabelæ˜¾ç¤ºå®¹å™¨èƒŒæ™¯è‰²
 		        composite.setBackgroundMode(SWT.INHERIT_DEFAULT);
 		    }
 		});
@@ -73,7 +73,7 @@ public class BackgroundModeDemo extends BaseDemo {
 		radioButton3.addSelectionListener(new SelectionAdapter() {
 		    @Override
 		    public void widgetSelected(SelectionEvent e) {
-		    	// TextºÍLabel¶¼ÏÔÊ¾ÈİÆ÷±³¾°É«
+		    	// Textå’ŒLabeléƒ½æ˜¾ç¤ºå®¹å™¨èƒŒæ™¯è‰²
 		        composite.setBackgroundMode(SWT.INHERIT_FORCE);
 		    }
 		});
